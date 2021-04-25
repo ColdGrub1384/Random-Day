@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Random_DayApp: App {
+    
+    @Environment(\.scenePhase) var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+        }.onChange(of: scenePhase) { newScenePhase in
+            makeDayIfNeeded()
         }
     }
 }
