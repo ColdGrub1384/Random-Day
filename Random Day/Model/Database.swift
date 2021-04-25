@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Database: Codable {
+struct Database: Codable, Equatable {
+    
+    static func == (lhs: Database, rhs: Database) -> Bool {
+        return lhs.taskCategories == rhs.taskCategories && lhs.plannedDays == rhs.plannedDays && lhs.today == rhs.today
+    }
     
     var taskCategories: [TaskCategory]
     

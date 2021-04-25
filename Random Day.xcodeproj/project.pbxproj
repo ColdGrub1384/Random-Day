@@ -49,6 +49,8 @@
 		C99418FE263536870008487C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911F8912633A0AE00B34A1D /* Day.swift */; };
 		C99418FF263536870008487C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92EF4B12634755000C5640C /* DatabaseManager.swift */; };
 		C9941906263541650008487C /* Task+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936CA2326346F0B00853EDC /* Task+View.swift */; };
+		C994190C2635AA040008487C /* Zephyr.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994190B2635AA040008487C /* Zephyr.swift */; };
+		C994190D2635AA040008487C /* Zephyr.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994190B2635AA040008487C /* Zephyr.swift */; };
 		C9B942462634A34F00D133B5 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B942452634A34F00D133B5 /* Sidebar.swift */; };
 		C9B942492634A3E600D133B5 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B942482634A3E600D133B5 /* Tabs.swift */; };
 		C9B9424D2634AAD100D133B5 /* SelectedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9424C2634AAD100D133B5 /* SelectedSection.swift */; };
@@ -113,6 +115,7 @@
 		C99418E8263536080008487C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99418EA263536080008487C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C99418EE263536080008487C /* Today ScheduleExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today ScheduleExtension.entitlements"; sourceTree = "<group>"; };
+		C994190B2635AA040008487C /* Zephyr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zephyr.swift; path = Zephyr/Sources/Zephyr.swift; sourceTree = SOURCE_ROOT; };
 		C9B942452634A34F00D133B5 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		C9B942482634A3E600D133B5 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		C9B9424C2634AAD100D133B5 /* SelectedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSection.swift; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 			children = (
 				C9B942512634B42F00D133B5 /* Random Day.entitlements */,
 				C911F87726339EF000B34A1D /* Random_DayApp.swift */,
+				C994190B2635AA040008487C /* Zephyr.swift */,
 				C911F88E2633A09A00B34A1D /* UI */,
 				C911F8902633A0A200B34A1D /* Model */,
 				C911F87B26339EF100B34A1D /* Assets.xcassets */,
@@ -350,6 +354,7 @@
 				C9B942462634A34F00D133B5 /* Sidebar.swift in Sources */,
 				C92EF4B22634755000C5640C /* DatabaseManager.swift in Sources */,
 				C99418CE2634CB3C0008487C /* FutureTask+View.swift in Sources */,
+				C994190C2635AA040008487C /* Zephyr.swift in Sources */,
 				C936CA1E26346E7900853EDC /* PlannedDay.swift in Sources */,
 				C911F8922633A0AE00B34A1D /* Day.swift in Sources */,
 				C936CA2126346EDC00853EDC /* TaskCategory.swift in Sources */,
@@ -382,6 +387,7 @@
 				C99418F6263536870008487C /* TaskCategory.swift in Sources */,
 				C99418FF263536870008487C /* DatabaseManager.swift in Sources */,
 				C99418F5263536870008487C /* Weekday.swift in Sources */,
+				C994190D2635AA040008487C /* Zephyr.swift in Sources */,
 				C99418FB263536870008487C /* SelectedSection.swift in Sources */,
 				C99418E7263536070008487C /* Today_Schedule.swift in Sources */,
 			);

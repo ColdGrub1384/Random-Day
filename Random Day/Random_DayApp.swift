@@ -12,6 +12,14 @@ struct Random_DayApp: App {
     
     @Environment(\.scenePhase) var scenePhase
     
+    init() {
+        Zephyr.sync(keys: "database", userDefaults: defaults ?? .standard)
+        DatabaseManager.shared.database = Database.fromDisk()
+        NotificationCenter.default.addObserver(forName: Zephyr.keysDidChangeOnCloudNotification, object: nil, queue: nil) { (_) in
+            DatabaseManager.shared.database = Database.fromDisk()
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

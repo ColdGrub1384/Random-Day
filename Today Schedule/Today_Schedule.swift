@@ -19,6 +19,10 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+        
+        Zephyr.sync(keys: "database", userDefaults: defaults ?? .standard)
+        DatabaseManager.shared.database = Database.fromDisk()
+        
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.

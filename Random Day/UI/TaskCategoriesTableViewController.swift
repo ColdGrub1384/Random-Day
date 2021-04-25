@@ -38,6 +38,10 @@ class TaskCategoriesTableViewController: UITableViewController {
         
         navigationItem.leftBarButtonItem = editButtonItem
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTask(_:)))
+        
+        NotificationCenter.default.addObserver(forName: Zephyr.keysDidChangeOnCloudNotification, object: nil, queue: nil) { [weak self] (_) in
+            self?.tableView.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -1,0 +1,3 @@
+[submodule "Zephyr"]
+	path = Zephyr
+	url = https://github.com/ArtSabintsev/Zephyr.git

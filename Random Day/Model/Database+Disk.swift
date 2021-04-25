@@ -7,7 +7,7 @@
 
 import Foundation
 
-fileprivate let defaults = UserDefaults(suiteName: "group.randomday")
+let defaults = UserDefaults(suiteName: "group.randomday")
 
 extension Database {
     
@@ -25,6 +25,11 @@ extension Database {
     }
     
     func saveToDisk() {
+        
+        guard self != Database.fromDisk() else {
+            return
+        }
+        
         do {
             let data = try JSONEncoder().encode(self)
             defaults?.setValue(data, forKey: "database")
